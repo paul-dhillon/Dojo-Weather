@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Utility classes start here */
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gap {
+    gap: 2rem;
+}
+
+/* Utility classes end here */
+
+/* nav classes start here */
+header {
+    background-color: #9fc5f8;
+    color: whitesmoke;
+    padding: 20px 0 20px 0;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+header ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+}
+
+header ul a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.current-city {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.bottom-nav {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+#tempType {
+    margin-left: 10px;
+}
+
+.temp-type p {
+    font-size: 1.1rem;
+}
+
+/* nav classes end here */
+
+/* card classes start here */
+.card {
+    background-color: #eeeeee;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+.week {
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 1px solid #9fc5f8;
+}
+
+.weatherpic {
+    border-radius: 50%;
+    width: 150px;
+    border: whitesmoke solid;
+    margin: 10px;
+}
+
+main {
+    gap: 1rem;
+}
+
+.weather-info {
+    font-size: 1.2rem;
+}
+
+.temp-numbers {
+    text-align: center;
+    margin: 15px 35px;
+    font-size: 1.2rem;
+}
+
+#temp1,
+#temp3,
+#temp5,
+#temp7 {
+    color: #cf302c;
+}
+
+#temp2,
+#temp4,
+#temp6,
+#temp8 {
+    color: #2b77e4;
+}
+
+/* card classes end here */
+
+/* Cookie classes start here */
+.cookies {
+    padding: 5px 10px;
+    border: 2px solid black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer1 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer2 {
+    flex: 2;
+}
+
+.footer3 {
+    flex: 1;
+    text-align: center;
+}
+
+.accept {
+    background-color: #9fc5f8;
+    padding: 5px 20px;
+    box-shadow: 3px 3px black;
+}
+
+/* Cookie classes end here */

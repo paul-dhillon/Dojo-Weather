@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex gap">
+            <div>
+                <h1 class="logo">DojoWeather</h1>
+            </div>
+            <ul class="d-flex gap">
+                <li><a href="#" onclick="popUp()">Burbank</a></li>
+                <li><a href="#" onclick="popUp()">Chicago</a></li>
+                <li><a href="#" onclick="popUp()">Dallas</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container bottom-nav d-flex gap">
+        <h2 class="current-city">San Jose</h2>
+        <div class="temp-type d-flex">
+            <p>show temperature in</p>
+            <select name="temp" id="tempType" onchange="changeTemp(this);">
+                <option value="fahrenheit">°F</option>
+                <option value="celsius">°C</option>
+            </select>
+        </div>
+    </div>
+    <main class="container d-flex">
+        <div class="card">
+            <h4 class="week">Today</h4>
+            <img src="./assets/some_rain.png" alt="rain clouds" class="weatherpic">
+            <p class="weather-info">Some Rain</p>
+            <div class="temp-numbers d-flex">
+                <span id="temp1">75°</span>
+                <span id="temp2">60°</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4 class="week">Tomorrow</h4>
+            <img src="./assets/some_sun.png" alt="sunny weather" class="weatherpic">
+            <p class="weather-info">Some Sun</p>
+            <div class="temp-numbers d-flex">
+                <span id="temp3">80°</span>
+                <span id="temp4">66°</span>
+            </div>
+        </div>
+        <div class="card">
+            <h4 class="week">Friday</h4>
+            <img src="./assets/some_clouds.png" alt="cloudy" class="weatherpic">
+            <p class="weather-info">Some Clouds</p>
+            <div class="temp-numbers d-flex">
+                <span id="temp5">69°</span>
+                <span id="temp6">61°</span>
+            </div>
+        </div>
+        <div class="card">
+            <h4 class="week">Saturday</h4>
+            <img src="./assets/some_sun.png" alt="sunny" class="weatherpic">
+            <p class="weather-info">Some Sun</p>
+            <div class="temp-numbers d-flex">
+                <span id="temp7">78°</span>
+                <span id="temp8">70°</span>
+            </div>
+        </div>
+    </main>
+    <footer id="cookieFooter">
+        <div class="container d-flex cookies">
+            <div class="footer1">
+                <img src="./assets/cookie.png" alt="cookie" class="cookie-picture">
+            </div>
+            <div class="footer2">
+                <H4>Stop! Cookie Time</H4>
+                <p>We us cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyze our traffic. <span><a href="#">Read more...</a></span></p>
+            </div>
+            <div class="footer3"><button class="accept" onclick="remove(this);">I Accept</button></div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
